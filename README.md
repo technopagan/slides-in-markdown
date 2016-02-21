@@ -1,2 +1,34 @@
-# slides-in-markdown
-My slide deck tool for giving presentations written in MarkDown. Based on remark.js and written in plain HTML, CSS &amp; JS. Features presenter console with speaker notes, timer, screen blanking and more.
+# Slides in MarkDown
+
+This is a slide deck tool for giving presentations written in MarkDown. It is based on [Remark.js](https://github.com/gnab/remark/) and written in plain HTML, CSS &amp; JS, making it compatible with all operating systems. It features a presenter console with speaker notes, timer, screen blanking and more.
+
+## HowTo: Writing 
+
+To start writing your own slide deck in MarkDown, simply open the HTML file in your editor of choice and make changes as you wish. You can find all the places that you should edit by searching for the '#ToDo' hashtag inside the HTML file. Here are the different places in detail: 
+
+1. Write your presentation's title in the 'title' tag of the 'head' section
+2. Set '16:9' or '4:3' dimensions in the body.onload JavaScript
+3. Write your slides in MarkDown as shown in the examples
+4. Be inspiring!
+
+## HowTo: Presenting
+
+1. Press 'c' to clone the current view into a new, synced window
+2. Press 'p' in the original window to enter Presenter Console
+3. Move the cloned window to projector / screen display
+4. Press 'f' to make the cloned window fullscreen
+5. Enjoy!
+
+Hint: You can always press 'h' to see an overview of all available key commands.
+
+## HowTo: Exporting to PDF
+
+1. Install [DeckTape](https://github.com/astefanutti/decktape)
+2. Start a local webserver inside slide deck directory (e.g. with 'python -m http.server')
+2. Go to your local Deckset repository using the terminal
+3. Run: './bin/phantomjs decktape.js http://127.0.0.1:8080/slidedeck.html slidedeck.pdf
+4. Be proud of your beautiful slidedeck.pdf file!
+
+## HowTo: Theming
+
+If you want, you can customize the looks of your slide deck by simply editing the CSS file with your favorite code editor. Colors, fonts and layout are completely customizable as if you were editing a regular website.
