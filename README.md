@@ -26,7 +26,7 @@ Hint: You can always press 'h' to see an overview of all available key commands.
 
 1. Install [DeckTape](https://github.com/astefanutti/decktape)
 2. Start a local webserver inside slide deck directory (e.g. with 'python -m http.server')
-2. Go to your local Deckset repository using the terminal
+2. Go to your local DeckTape repository using the terminal
 3. Run: './bin/phantomjs decktape.js http://127.0.0.1:8080/slidedeck.html slidedeck.pdf
 4. Be proud of your beautiful slidedeck.pdf file!
 

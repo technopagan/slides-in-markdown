@@ -218,3 +218,15 @@ body {
 .remark-slide-number {
     font-size: 0.415em;
 }
+
+.redbg {
+    box-shadow: 0px 9999px rgba(235, 13, 13, 0.4) inset;
+}
+
+.bluebg {
+    box-shadow: 0px 9999px rgba(13, 13, 235, 0.4) inset;
+}
+
+.blackbg {
+    box-shadow: 0px 9999px rgba(13, 13, 13, 0.4) inset;
+}
