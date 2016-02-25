@@ -1,1 +1,207 @@
-<h1>Hello World</h1>
+<!DOCTYPE html><html lang=en><head><meta http-equiv=Content-Type content="text/html; charset=UTF-8"><meta name=viewport content="width=device-width,initial-scale=1"><link rel="stylesheet" href="slidestyles.css" type="text/css" media="screen" charset="utf-8">
+
+<!-- #ToDo: Change Title for the presentation -->
+<title>Presentation Title</title>
+
+</head>
+    
+<!-- #ToDo: Change 16:9 to 4:3 or vice versa, according to the current projector / screen -->
+<body onload="var slideshow = remark.create({ratio: '16:9', navigation: {scroll: true, touch: true, click: false}, countIncrementalSlides: false, highlightLanguage: 'bash', highlightStyle: 'tomorrow-night-blue'});">
+
+<!-- #ToDo: Write your slides in MarkDown here -->
+<textarea id="source">
+
+class: center, middle
+
+background-image: url(media/pixybay-polygon-906202_1280.jpg)
+# Slides In MarkDown
+
+???
+Your presenter notes
+
+---
+
+# HowTo: Writing 
+
+To start writing your own slide deck in MarkDown, simply open the HTML file in your editor of choice and make changes as you wish. You can find all the places that you should edit by searching for the '#ToDo' hashtag inside the HTML file. Here are the different places in detail: 
+
+1. Write your presentation's title in the 'title' tag of the 'head' section
+2. Set '16:9' or '4:3' dimensions in the body.onload JavaScript
+3. Write your slides in MarkDown as shown in the examples
+4. Be inspiring!
+
+---
+
+# HowTo: Presenting
+
+1. Open the HTML file in a browser (via 'file://' or local webserver)
+2. Press 'c' to clone the current view into a new, synced window
+3. Press 'p' in the original window to enter Presenter Console
+4. Move the cloned window to projector / screen display
+5. Press 'f' to make the cloned window fullscreen
+6. Enjoy!
+
+Hint: You can always press 'h' to see an overview of all available key commands.
+
+---
+
+# HowTo: PDF Export
+
+1. Install DeckTape: https://github.com/astefanutti/decktape
+2. Start a local webserver inside slide deck directory (e.g. 'python -m http.server')
+2. Go to local DeckTape repository using your terminal
+3. Run: './bin/phantomjs decktape.js http://127.0.0.1:8080/slidedeck.html slidedeck.pdf
+4. Be proud of your beautiful slidedeck.pdf file! 
+
+---
+
+# HowTo: Theming
+
+If you want, you can customize the looks of your slide deck by simply editing the CSS file with your favorite code editor. Colors, fonts and layout are completely customizable as if you were editing a regular website.
+
+This level of customization is not necessary to simply *write* slides in Markdown. For common layout & formatting examples, check out the following slides.
+
+---
+
+class: center, middle
+
+# Formatting Examples
+
+---
+
+# Large Heading
+## Small Heading
+
+Lorem Ipsum dolor sit amet, sic transit gloria mundi. Consectetur adipiscing elit. Mauris quis mi tellus. Sed massa massa, luctus id efficitur et, fringilla vel velit. Nullam efficitur ante et sapien fermentum semper. Morbi vehicula sapien enim.
+
+---
+
+class: top, center
+
+# Top Center
+
+Lorem Ipsum dolor sit amet, sic transit gloria mundi. Consectetur adipiscing elit. Mauris quis mi tellus. Sed massa massa, luctus id efficitur et, fringilla vel velit. Nullam efficitur ante et sapien fermentum semper. Morbi vehicula sapien enim.
+
+---
+
+# Numbered List
+
+1. Lorem Ipsum
+2. Dolor Sit Amet
+3. Sic transit
+4. Gloria Mundi
+
+???
+Your presenter notes
+
+---
+
+# Bulletpoint List
+
+* Lorem Ipsum
+* Dolor Sit Amet
+* Sic transit
+* Gloria Mundi
+
+???
+Your presenter notes
+
+---
+
+background-image: url(media/pixybay-polygon-906202_1280.jpg)
+
+class: top, center
+
+# BLOCKQUOTE
+
+.blockquote[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis mi tellus. Sed massa massa, luctus id efficitur et, fringilla vel velit. Nullam efficitur ante et sapien fermentum semper. Morbi vehicula sapien enim, vitae sagittis elit pharetra semper. Etiam pharetra maximus orci sed scelerisque mauris. Etiam pharetra maximus orci sed scelerisquest.
+
+Author Name, 2001]
+
+???
+Your presenter notes
+
+---
+
+background-image: url(media/pixybay-polygon-906202_1280.jpg)
+
+# Code Snippet
+
+```js
+// Configurable Syntax Highlighing
+var key;
+var a = [];
+a[0] = "a";
+a[10] = "b";
+a[10000] = "c";
+for (key in a) {
+    if (a.hasOwnProperty(key)  &&        // Detail Comment
+        /^0$|^[1-9]\d*$/.test(key) &&
+        key <= 0123456789
+        ) {
+        console.log(a[key]);
+    }
+}
+```
+
+---
+
+class: top, center
+
+![Dummy Picture](media/buffy-stake-tool-capable.gif)
+.footnote[Photo Credits]
+
+???
+Your presenter notes
+
+---
+
+class: center, middle, redbg
+
+background-image: url(media/pixybay-polygon-906202_1280.jpg)
+# Background Tinting
+## blackbg, redbg & bluebg
+
+???
+Your presenter notes
+
+---
+
+
+class: top, center
+
+# Two Columns
+
+.left-column[
+![Dummy Picture](media/flexboxbg.jpg)]
+
+.right-column[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis mi tellus. Sed massa massa, luctus id efficitur et, fringilla vel velit. Nullam efficitur ante et sapien fermentum semper. Morbi vehicula sapien enim, vitae sagittis elit pharetra semper. Etiam pharetra maximus orci, sed scelerisque mauris lacinia quis. Aliquam erat volutpat.]
+
+???
+Your presenter notes
+
+---
+
+.video[
+<iframe src="http://www.youtube.com/embed/9VlHOlrYcO8" frameborder="0" allowfullscreen></iframe>]
+.footnote[YouTube Video Credits]
+
+---
+
+.video[
+<video controls>
+  <source src="media/localvideo.webm" type="video/webm">
+  <source src="media/localvideo.mp4" type="video/mp4">
+</video>]
+.footnote[Local HTML5 Video Credits]
+
+---
+
+class: center, middle
+
+# The End
+##### created by [Tobias Baldauf](http://who.tobias.is/), [@tbaldauf](https://twitter.com/tbaldauf)<br>based on [Remark.js](https://github.com/gnab/remark/)<br>made with <3
+
+
+</textarea><script type="text/javascript" src="remark-latest.min.js"></script></body></html>

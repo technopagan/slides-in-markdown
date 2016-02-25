@@ -1,0 +1,232 @@
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+/* Pix
+-------------------------------------------------- */
+img { /* common CSS for fluid rescaling, but respecting the image's actual pixel size */
+    display: block;
+    max-width: 100%;
+}
+
+.remark-slide-content img { /* special requirement for slides: upscale images smaller than the available space to 100% */
+    min-width: 100%;
+}
+
+
+/* Base
+-------------------------------------------------- */
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background-color: #FAFAFA !important; /* override remark.js's hardcoded dark background color in fullscreen view */
+}
+
+
+/* Main
+-------------------------------------------------- */
+.remark-container { /* slides page background */
+    background: #FAFAFA;
+}
+
+.remark-slide-content { /* actual slides style */
+    background-color: #2196F3;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto !important; /* override remark.js's Javascript-based image auto-scaling */
+    background-size: cover;
+    color: #fff;
+    font-size: 1.716em;
+}
+
+.remark-slide-content h1 {
+    font-size: 4.148em;
+}
+
+.remark-slide-content h2 {
+    font-size: 2.432em;
+}
+
+.remark-slide-content h2,
+.remark-slide-content p,
+.remark-slide-content ol,
+.remark-slide-content ul {
+    margin: 0 0 .5em 0; /* Global margin rules for in-slide elements */
+}
+
+/* Lists
+-------------------------------------------------- */
+
+.remark-slide-content p,
+.remark-slide-content ol,
+.remark-slide-content ul {
+    text-align: left;
+}
+
+.remark-slide-content ol li,
+.remark-slide-content ul li, {
+  margin-bottom: .5em;
+}
+
+.remark-slide-content ol li {
+  counter-increment: step-counter;
+}
+
+.remark-slide-content ol li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 0.716em;
+  background-color: #FF9800;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+.remark-slide-content ul li {
+  margin: 0 0 0 1em;
+  list-style: disc none outside;
+}
+
+
+/* Blockquotes
+-------------------------------------------------- */
+.blockquote {
+    background-color: rgba(33,33,33,.85);
+    border-left: 0.225em solid #fff;
+    margin: 1.5em 0 1.5em;
+    padding: 1em 1.5em 0.1em 2.5em;
+    position: relative;
+    border-radius: 3px;
+}
+
+.blockquote:before,
+.blockquote:after {
+    font-size: 5em;
+    position: absolute;
+    line-height: .1em;
+}
+
+.blockquote:before {
+    content: "\201C";
+    left: 5px;
+    top: .43em;
+}
+
+.blockquote:after {
+    content: "\201D";
+    right: 25px;
+    bottom: 0em;
+}
+
+.blockquote:before,
+.blockquote:after,
+.blockquote p:first-of-type {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+}
+
+.blockquote p:nth-of-type(2n):before {
+    content:"\2013\00a0";
+}
+
+.blockquote p:nth-of-type(2n) {
+    padding: 1em 0;
+    font-size: 0.716em;
+}
+
+
+/* Code Blocks
+-------------------------------------------------- */
+.remark-code, 
+.remark-inline-code {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 24px;
+}
+
+.hljs-tomorrow-night-blue .hljs {
+    background-color: rgba(33,33,33,.85) !important; /* override Highlight.js's "Tomorrow Night Blue" background color for consistency */
+    border-left: 0.225em solid #fff;
+    margin: 1.5em 0 1.5em;
+    padding: 1em 1.5em 0.1em 2.5em;
+    border-radius: 3px;
+}
+
+
+/* Videos
+-------------------------------------------------- */
+.video {
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.45%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.video iframe,
+.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Two-Column Layout
+-------------------------------------------------- */
+.left-column,
+.right-column {
+    width: 49%;
+    text-align: left;
+}
+
+.left-column {
+    float: left;
+}
+
+.right-column {
+    float: right;
+}
+
+/* Additional Helper Classes
+-------------------------------------------------- */
+
+.footnote,
+.remark-slide-number {
+    font-size: 0.415em;
+}
+
+.redbg {
+    box-shadow: 0px 9999px rgba(235, 13, 13, 0.4) inset;
+}
+
+.bluebg {
+    box-shadow: 0px 9999px rgba(13, 13, 235, 0.4) inset;
+}
+
+.blackbg {
+    box-shadow: 0px 9999px rgba(13, 13, 13, 0.4) inset;
+}
