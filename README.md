@@ -2,6 +2,8 @@
 
 This is a slide deck tool for giving presentations written in MarkDown. It is based on [Remark.js](https://github.com/gnab/remark/) and written in plain HTML, CSS &amp; JS, making it compatible with all operating systems. It features a presenter console with speaker notes, timer, screen blanking and more.
 
+**[Live Demo](https://technopagan.github.io/slides-in-markdown/)**
+
 ## Writing 
 
 To start writing your own slide deck in MarkDown, simply open the HTML file in your editor of choice and make changes as you wish. You can find all the places that you should edit by searching for the '#ToDo' hashtag inside the HTML file. Here are the different places in detail: 
