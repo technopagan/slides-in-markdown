@@ -80,6 +80,16 @@ body {
     margin: 0 0 .5em 0; /* Global margin rules for in-slide elements */
 }
 
+/* Links
+-------------------------------------------------- */
+
+.remark-slide-content a:link,
+.remark-slide-content a:visited,
+.remark-slide-content a:hover,
+.remark-slide-content a:active {
+    color: #fff;
+}
+
 /* Lists
 -------------------------------------------------- */
 
