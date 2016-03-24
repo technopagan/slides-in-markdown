@@ -54,8 +54,12 @@ body {
 .remark-slide-content { /* actual slides style */
     background-color: #2196F3;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: 100% auto !important; /* override remark.js's Javascript-based image auto-scaling */
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     color: #fff;
     font-size: 1.716em;
