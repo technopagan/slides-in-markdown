@@ -54,7 +54,7 @@ body {
 .remark-slide-content { /* actual slides style */
     background-color: #2196F3;
     background-repeat: no-repeat;
-    background-position: center top !important;
+    background-position: center center !important;
     background-size: 100% auto !important; /* override remark.js's Javascript-based image auto-scaling */
     -webkit-background-size: cover !important;
     moz-background-size: cover !important;
