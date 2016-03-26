@@ -229,7 +229,18 @@ body {
 
 .footnote,
 .remark-slide-number {
+    bottom: 12px;
+    opacity: 0.5;
+    position: absolute;
     font-size: 0.415em;
+}
+
+.footnote {
+    left: 20px;
+}
+
+.remark-slide-number {
+    right: 20px;
 }
 
 .redbg {
