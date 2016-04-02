@@ -230,7 +230,10 @@ body {
 .footnote,
 .remark-slide-number {
     bottom: 12px;
-    opacity: 0.5;
+    padding: 6px;
+    color: #fff;
+    background-color: rgba(50,50,50,.2);
+    border-radius: 12px;
     position: absolute;
     font-size: 0.415em;
 }
@@ -241,6 +244,7 @@ body {
 
 .remark-slide-number {
     right: 20px;
+    opacity: 1 !important;
 }
 
 .redbg {
