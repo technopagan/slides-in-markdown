@@ -224,6 +224,22 @@ body {
     float: right;
 }
 
+
+/* Presenter Mode Styles
+-------------------------------------------------- */
+
+.remark-container.remark-presenter-mode .remark-notes-area .remark-notes {
+    font-size: 166%;
+    line-height: 133%;
+}
+
+.remark-container.remark-presenter-mode .remark-notes-area .remark-notes ul,
+.remark-container.remark-presenter-mode .remark-notes-area .remark-notes-preview ul {
+    list-style: disc outside none !important;
+    padding-left: 24px !important;
+}
+
+
 /* Additional Helper Classes
 -------------------------------------------------- */
 
