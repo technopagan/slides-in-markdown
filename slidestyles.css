@@ -196,15 +196,31 @@ body {
     padding-bottom: 56.45%;
     padding-top: 25px;
     height: 0;
+    background-color: inherit;
 }
 
 .video iframe,
-.video video {
+.video video,
+.video img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.video iframe,
+.video video {
+    z-index: 999;
+    background-color: inherit;
+}
+
+.video img {
+    z-index: 2;
+}
+
+.video + .video {
+    margin-top: -59%;
 }
 
 
