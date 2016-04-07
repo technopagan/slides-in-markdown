@@ -196,7 +196,7 @@ body {
     padding-bottom: 56.45%;
     padding-top: 25px;
     height: 0;
-    background-color: inherit;
+    background-color: inherit; /* Inherit slide bg-color down the cascade to hide fallback image even on video controls' transparent areas */
 }
 
 .video iframe,
@@ -211,16 +211,17 @@ body {
 
 .video iframe,
 .video video {
-    z-index: 999;
+    z-index: 999; /* Make sure actual animated content always overlays the fallback image */
     background-color: inherit;
 }
 
 .video img {
-    z-index: 2;
+    z-index: 2; /* The fallback image gets a low z-index to always render behind actual live video */
 }
 
 .video + .video {
-    margin-top: -59%;
+    margin-top: -59%; /* Move the fallback image to the same XY coordinates as the actual video */
+    padding: 1px; /* 1px padding prevents visible half-pixel borders leaking through due to rounding */
 }
 
 
