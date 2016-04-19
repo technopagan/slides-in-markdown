@@ -25,8 +25,11 @@ img { /* common CSS for fluid rescaling, but respecting the image's actual pixel
     max-width: 100%;
 }
 
-.remark-slide-content img { /* special requirement for slides: upscale images smaller than the available space to 100% */
-    min-width: 100%;
+.remark-slide-content img { /* special requirement for slides: upscale images smaller than the available space to 100%, but don't leak out over the bottom */
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: 42vh !important;
+    object-fit: contain !important;
 }
 
 
@@ -72,7 +75,6 @@ body {
     font-size: 2.432em;
 }
 
-.remark-slide-content h2,
 .remark-slide-content p,
 .remark-slide-content ol,
 .remark-slide-content ul {
