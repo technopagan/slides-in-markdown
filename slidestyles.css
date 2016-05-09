@@ -32,6 +32,16 @@ img { /* common CSS for fluid rescaling, but respecting the image's actual pixel
     object-fit: contain !important;
 }
 
+/* Nasty CSS hack to target WebKit so that PDF exporting still looks good although WebKit in PhantomJS does NOT support "object-fit" */
+@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0) {
+    @media {
+        .remark-slide-content img {
+            height: auto !important;
+            object-fit: fill !important;
+        }
+    }
+}
+
 
 /* Base
 -------------------------------------------------- */
